@@ -1,0 +1,986 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bandage</title>
+    <link rel="stylesheet" href="./src/style/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+  </head>
+  <body>
+    <!-- TODO Header -->
+    <header class="tracking-[0.2px]">
+      <!-- TODO Header top -->
+      <div class="header-top bg-secondary_color">
+        <div
+          class="container hidden mx-auto lg:flex justify-around pt-6 pb-[18px]"
+        >
+          <div class="contacts flex gap-x-[20px]">
+            <a href="tel: 2255550118" class="text-white flex items-center"
+              ><i class="fa-solid fa-phone"></i
+              ><span class="ml-[5px] text-xs">(225) 555-0118</span></a
+            >
+            <a
+              href="mailto: michelle.rivera@example.com"
+              class="text-white flex items-center"
+            >
+              <i class="fa-regular fa-envelope"></i
+              ><span class="ml-[5px] text-xs tracking-wide"
+                >michelle.rivera@example.com</span
+              ></a
+            >
+          </div>
+          <h6 class="header-top__title font-bold text-sm leading-6 text-white">
+            Follow Us and get a chance to win 80% off
+          </h6>
+          <div class="social-link flex gap-x-4 items-center">
+            <span class="font-bold text-white text-sm leading-6"
+              >Follow Us:</span
+            >
+            <a href="#" class="text-white"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a href="#" class="text-white"
+              ><i class="fa-brands fa-youtube"></i
+            ></a>
+            <a href="#" class="text-white"
+              ><i class="fa-brands fa-facebook"></i
+            ></a>
+            <a href="#" class="text-white"
+              ><i class="fa-brands fa-twitter"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <!-- TODO Header center -->
+      <div
+        class="header-center container mx-auto flex flex-col lg:flex-row justify-between pt-9 pb-6 lg:py-[23px]"
+      >
+        <div class="logo flex justify-around">
+          <a href="#" class="font-bold text-2xl text-nav_active_link"
+            >Bandage</a
+          >
+          <a href="#" class="lg:hidden text-2xl text-nav_link"
+            ><i class="fa-solid fa-bars"></i
+          ></a>
+        </div>
+        <nav class="menu flex justify-center items-center">
+          <ul
+            class="flex gap-y-[30px] lg:gap-x-[15px] flex-col lg:flex-row items-center mt-[90px] lg:mt-0 text-3xl leading-[45px] lg:text-sm lg:leading-[24px] lg:font-bold"
+          >
+            <li><a href="#" class="text-nav_link">Home</a></li>
+            <li>
+              <a href="#" class="text-nav_active_link md:font-medium"
+                >Shop
+                <i
+                  class="fa-solid fa-chevron-down ml-[9px] hidden lg:inline-block"
+                ></i
+              ></a>
+            </li>
+            <li><a href="#" class="text-nav_link">Blog</a></li>
+            <li><a href="#" class="text-nav_link">About</a></li>
+            <li><a href="#" class="text-nav_link">Contacts</a></li>
+            <li><a href="#" class="text-nav_link">Pages</a></li>
+          </ul>
+        </nav>
+        <ul
+          class="flex gap-x-2 text-primary justify-center mt-9 lg:mt-0 md:justify-auto items-center text-3xl leading-[45px] lg:text-sm lg:leading-[24px] lg:font-bold"
+        >
+          <li>
+            <a href="#"><i class="fa-regular fa-user mr-1.5"></i>Login</a>
+          </li>
+          <li>/</li>
+          <li><a href="#">Register</a></li>
+        </ul>
+        <ul
+          class="flex gap-[30px] flex-col items-center lg:flex-row text-primary mt-[30px] lg:mt-0"
+        >
+          <li>
+            <a href="#"
+              ><i
+                class="fa-solid fa-magnifying-glass text-[34px] lg:text-base"
+              ></i
+            ></a>
+          </li>
+          <li>
+            <a href="#"
+              ><i
+                class="fa-solid fa-cart-shopping mr-1.5 text-[34px] lg:text-base"
+              ></i
+              ><span>1</span></a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><i
+                class="fa-regular fa-heart mr-1.5 text-[34px] lg:text-base"
+              ></i
+              ><span>1</span></a
+            >
+          </li>
+        </ul>
+      </div>
+      <!-- TODO Header bottom -->
+      <div class="bg-zinc-50 header-bottom">
+        <div
+          class="container mx-auto flex flex-col gap-y-[54px] items-center pt-12 pb-[58px] lg:py-6 lg:flex-row mx-auto lg:justify-between"
+        >
+          <h2 class="text-2xl font-bold text-nav_active_link">Shop</h2>
+          <div class="flex items-center gap-x-3.5 text-sm font-bold leading-6">
+            <span class="text-nav_active_link">Home </span>
+            <i class="fa-solid fa-chevron-right text-gray-450"></i>
+            <span class="text-gray-450">Shop</span>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- TODO main -->
+    <main>
+      <!-- TODO top section -->
+      <section class="bg-zinc-50 tracking-[0.2px] pb-[37px] lg:pb-12">
+        <h1 class="hidden">Shop page</h1>
+        <div
+          class="container mx-auto grid grid-cols-1 lg:grid-cols-5 gap-[14px] hidden"
+        >
+          <div class="flex justify-center">
+            <div
+              class="animate-pulse h-[223px] w-full max-w-[205px] bg-slate-200 rounded-lg shadow-md flex flex-col items-center justify-center gap-3"
+            >
+              <div class="rounded-lg p-1 bg-slate-300 w-[55%]"></div>
+              <div class="rounded-lg p-1 bg-slate-300 w-[35%]"></div>
+            </div>
+          </div>
+          <div class="flex justify-center">
+            <div
+              class="animate-pulse h-[223px] w-full max-w-[205px] bg-slate-200 rounded-lg shadow-md flex flex-col items-center justify-center gap-3"
+            >
+              <div class="rounded-lg p-1 bg-slate-300 w-[55%]"></div>
+              <div class="rounded-lg p-1 bg-slate-300 w-[35%]"></div>
+            </div>
+          </div>
+          <div class="flex justify-center">
+            <div
+              class="animate-pulse h-[223px] w-full max-w-[205px] bg-slate-200 rounded-lg shadow-md flex flex-col items-center justify-center gap-3"
+            >
+              <div class="rounded-lg p-1 bg-slate-300 w-[55%]"></div>
+              <div class="rounded-lg p-1 bg-slate-300 w-[35%]"></div>
+            </div>
+          </div>
+          <div class="flex justify-center">
+            <div
+              class="animate-pulse h-[223px] w-full max-w-[205px] bg-slate-200 rounded-lg shadow-md flex flex-col items-center justify-center gap-3"
+            >
+              <div class="rounded-lg p-1 bg-slate-300 w-[55%]"></div>
+              <div class="rounded-lg p-1 bg-slate-300 w-[35%]"></div>
+            </div>
+          </div>
+          <div class="flex justify-center">
+            <div
+              class="animate-pulse h-[223px] w-full max-w-[205px] bg-slate-200 rounded-lg shadow-md flex flex-col items-center justify-center gap-3"
+            >
+              <div class="rounded-lg p-1 bg-slate-300 w-[55%]"></div>
+              <div class="rounded-lg p-1 bg-slate-300 w-[35%]"></div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="container mx-auto flex flex-col lg:flex-row lg:justify-between gap-[14px]"
+        >
+          <div class="flex relative">
+            <div
+              class="flex text-white absolute flex-col justify-center items-center gap-[10px] absolute inset-0"
+            >
+              <h3 class="font-bold uppercase text-base tracking-[0.1px]">
+                Cloths
+              </h3>
+              <p class="text-sm">5 items</p>
+            </div>
+            <img
+              class="object-cover h-[300px] lg:h-[223px] w-full max-w-[332px] lg:max-w-[205px] mx-auto"
+              src="./src/img/media bg-cover-1.png"
+              alt="Cover"
+            />
+          </div>
+          <div class="flex relative">
+            <div
+              class="flex text-white absolute flex-col justify-center items-center gap-[10px] absolute inset-0"
+            >
+              <h3 class="font-bold uppercase text-base tracking-[0.1px]">
+                Cloths
+              </h3>
+              <p class="text-sm">5 items</p>
+            </div>
+            <img
+              class="object-cover h-[300px] lg:h-[223px] w-full max-w-[332px] lg:max-w-[205px] mx-auto"
+              src="./src/img/media bg-cover-2.png"
+              alt="Cover"
+            />
+          </div>
+          <div class="flex relative">
+            <div
+              class="flex text-white absolute flex-col justify-center items-center gap-[10px] absolute inset-0"
+            >
+              <h3 class="font-bold uppercase text-base tracking-[0.1px]">
+                Cloths
+              </h3>
+              <p class="text-sm">5 items</p>
+            </div>
+            <img
+              class="object-cover h-[300px] lg:h-[223px] w-full max-w-[332px] lg:max-w-[205px] mx-auto"
+              src="./src/img/media bg-cover-3.png"
+              alt="Cover"
+            />
+          </div>
+          <div class="flex relative">
+            <div
+              class="flex text-white absolute flex-col justify-center items-center gap-[10px] absolute inset-0"
+            >
+              <h3 class="font-bold uppercase text-base tracking-[0.1px]">
+                Cloths
+              </h3>
+              <p class="text-sm">5 items</p>
+            </div>
+            <img
+              class="object-cover h-[300px] lg:h-[223px] w-full max-w-[332px] lg:max-w-[205px] mx-auto"
+              src="./src/img/media bg-cover-4.png"
+              alt="Cover"
+            />
+          </div>
+          <div class="flex relative">
+            <div
+              class="flex text-white absolute flex-col justify-center items-center gap-[10px] absolute inset-0"
+            >
+              <h3 class="font-bold uppercase text-base tracking-[0.1px]">
+                Cloths
+              </h3>
+              <p class="text-sm">5 items</p>
+            </div>
+            <img
+              class="object-cover h-[300px] lg:h-[223px] w-full max-w-[332px] lg:max-w-[205px] mx-auto"
+              src="./src/img/media bg-cover-5.png"
+              alt="Cover"
+            />
+          </div>
+        </div>
+      </section>
+      <!-- TODO Sort section -->
+      <section class="sort-shop">
+        <div class="container mx-auto">
+          <h2 class="hidden">Sort</h2>
+          <div
+            class="flex flex-col lg:flex-row items-center justify-between py-6"
+          >
+            <span class="text-sm font-bold leading-6 text-nav_link"
+              >Showing all 12 results</span
+            >
+            <div class="flex items-center gap-[15px] my-6 lg:my-0">
+              <span class="text-sm font-bold leading-6 text-nav_link"
+                >Views:</span
+              >
+              <div
+                class="p-[15px] flex justify-center items-center w-[46px] h-[46px] border-solid border-[1px] border-gray-451 rounded-[5px]"
+              >
+                <span class="material-symbols-outlined"> apps </span>
+              </div>
+              <div
+                class="p-[15px] flex justify-center items-center w-[46px] h-[46px] border-solid border-[1px] border-gray-451 rounded-[5px]"
+              >
+                <i class="fa-solid fa-list-check"></i>
+              </div>
+            </div>
+            <div class="flex items-center gap-[15px]">
+              <button
+                type="button"
+                class="bg-gray-453 text-sm leading-[28px] w-[141px] py-2.5 border-gray-452 border-solid border-[1px] rounded-[5px]"
+              >
+                Popularity<i
+                  class="fa-solid fa-chevron-down ml-1.5 lg:inline-block"
+                ></i>
+              </button>
+              <button
+                type="button"
+                class="w-[94px] font-bold text-sm leading-6 bg-primary py-2.5 text-white rounded-[5px]"
+              >
+                Filter
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- TODO Shop section -->
+      <section>
+        <!-- TODO Shop top -->
+        <h2 class="hidden">shop</h2>
+        <div class="shop-top container mx-auto">
+          <div class="grid grid-cols-1 lg:grid-cols-4 gap-[30px]">
+            <div class="flex flex-col items-center">
+              <img
+                class="w-[348px] h-[427px] lg:max-h-[300px] lg:w-[239px]"
+                src="./src/img/product-cover-1.png"
+                alt="Cover"
+              />
+              <div
+                class="flex flex-col items-center pt-[25px] pb-[35px] gap-2.5"
+              >
+                <h3 class="font-bold text-nav_active_link">Graphic Design</h3>
+                <span class="font-bold text-sm leading-6 text-nav_link"
+                  >English Department</span
+                >
+                <div class="font-bold text-base text-gray-450">
+                  <span>$16.48</span>
+                  <span class="text-secondary_color ml-[5px]">$6.48</span>
+                </div>
+                <div class="flex gap-[6px] items-center">
+                  <a href="#">
+                    <div class="w-4 h-4 rounded-full bg-primary"></div>
+                  </a>
+                  <a href="#"
+                    ><div class="w-4 h-4 rounded-full bg-secondary_color"></div
+                  ></a>
+                  <a href="#"
+                    ><div class="w-4 h-4 rounded-full bg-orange-450"></div
+                  ></a>
+                  <a href="#"
+                    ><div class="w-4 h-4 rounded-full bg-secondary_color"></div
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col items-center">
+              <img
+                class="w-[348px] h-[427px] lg:max-h-[300px] lg:w-[239px]"
+                src="./src/img/product-cover-2.png"
+                alt="Cover"
+              />
+              <div
+                class="flex flex-col items-center pt-[25px] pb-[35px] gap-2.5"
+              >
+                <h3 class="font-bold text-nav_active_link">Graphic Design</h3>
+                <span class="font-bold text-sm leading-6 text-nav_link"
+                  >English Department</span
+                >
+                <div class="font-bold text-base text-gray-450">
+                  <span>$16.48</span>
+                  <span class="text-secondary_color ml-[5px]">$6.48</span>
+                </div>
+                <div class="flex gap-[6px] items-center">
+                  <a href="#">
+                    <div class="w-4 h-4 rounded-full bg-primary"></div>
+                  </a>
+                  <a href="#"
+                    ><div class="w-4 h-4 rounded-full bg-secondary_color"></div
+                  ></a>
+                  <a href="#"
+                    ><div class="w-4 h-4 rounded-full bg-orange-450"></div
+                  ></a>
+                  <a href="#"
+                    ><div class="w-4 h-4 rounded-full bg-secondary_color"></div
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col items-center">
+              <img
+                class="w-[348px] h-[427px] lg:max-h-[300px] lg:w-[239px]"
+                src="./src/img/product-cover-3.png"
+                alt="Cover"
+              />
+              <div
+                class="flex flex-col items-center pt-[25px] pb-[35px] gap-2.5"
+              >
+                <h3 class="font-bold text-nav_active_link">Graphic Design</h3>
+                <span class="font-bold text-sm leading-6 text-nav_link"
+                  >English Department</span
+                >
+                <div class="font-bold text-base text-gray-450">
+                  <span>$16.48</span>
+                  <span class="text-secondary_color ml-[5px]">$6.48</span>
+                </div>
+                <div class="flex gap-[6px] items-center">
+                  <a href="#">
+                    <div class="w-4 h-4 rounded-full bg-primary"></div>
+                  </a>
+                  <a href="#"
+                    ><div class="w-4 h-4 rounded-full bg-secondary_color"></div
+                  ></a>
+                  <a href="#"
+                    ><div class="w-4 h-4 rounded-full bg-orange-450"></div
+                  ></a>
+                  <a href="#"
+                    ><div class="w-4 h-4 rounded-full bg-secondary_color"></div
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col items-center">
+              <img
+                class="w-[348px] h-[427px] lg:max-h-[300px] lg:w-[239px]"
+                src="./src/img/product-cover-4.png"
+                alt="Cover"
+              />
+              <div
+                class="flex flex-col items-center pt-[25px] pb-[35px] gap-2.5"
+              >
+                <h3 class="font-bold text-nav_active_link">Graphic Design</h3>
+                <span class="font-bold text-sm leading-6 text-nav_link"
+                  >English Department</span
+                >
+                <div class="font-bold text-base text-gray-450">
+                  <span>$16.48</span>
+                  <span class="text-secondary_color ml-[5px]">$6.48</span>
+                </div>
+                <div class="flex gap-[6px] items-center">
+                  <a href="#">
+                    <div class="w-4 h-4 rounded-full bg-primary"></div>
+                  </a>
+                  <a href="#"
+                    ><div class="w-4 h-4 rounded-full bg-secondary_color"></div
+                  ></a>
+                  <a href="#"
+                    ><div class="w-4 h-4 rounded-full bg-orange-450"></div
+                  ></a>
+                  <a href="#"
+                    ><div class="w-4 h-4 rounded-full bg-secondary_color"></div
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col items-center">
+              <img
+                class="w-[348px] h-[427px] lg:max-h-[300px] lg:w-[239px]"
+                src="./src/img/product-cover-5.png"
+                alt="Cover"
+              />
+              <div
+                class="flex flex-col items-center pt-[25px] pb-[35px] gap-2.5"
+              >
+                <h3 class="font-bold text-nav_active_link">Graphic Design</h3>
+                <span class="font-bold text-sm leading-6 text-nav_link"
+                  >English Department</span
+                >
+                <div class="font-bold text-base text-gray-450">
+                  <span>$16.48</span>
+                  <span class="text-secondary_color ml-[5px]">$6.48</span>
+                </div>
+                <div class="flex gap-[6px] items-center">
+                  <a href="#">
+                    <div class="w-4 h-4 rounded-full bg-primary"></div>
+                  </a>
+                  <a href="#"
+                    ><div class="w-4 h-4 rounded-full bg-secondary_color"></div
+                  ></a>
+                  <a href="#"
+                    ><div class="w-4 h-4 rounded-full bg-orange-450"></div
+                  ></a>
+                  <a href="#"
+                    ><div class="w-4 h-4 rounded-full bg-secondary_color"></div
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col items-center">
+              <img
+                class="w-[348px] h-[427px] lg:max-h-[300px] lg:w-[239px]"
+                src="./src/img/product-cover-6.png"
+                alt="Cover"
+              />
+              <div
+                class="flex flex-col items-center pt-[25px] pb-[35px] gap-2.5"
+              >
+                <h3 class="font-bold text-nav_active_link">Graphic Design</h3>
+                <span class="font-bold text-sm leading-6 text-nav_link"
+                  >English Department</span
+                >
+                <div class="font-bold text-base text-gray-450">
+                  <span>$16.48</span>
+                  <span class="text-secondary_color ml-[5px]">$6.48</span>
+                </div>
+                <div class="flex gap-[6px] items-center">
+                  <a href="#">
+                    <div class="w-4 h-4 rounded-full bg-primary"></div>
+                  </a>
+                  <a href="#"
+                    ><div class="w-4 h-4 rounded-full bg-secondary_color"></div
+                  ></a>
+                  <a href="#"
+                    ><div class="w-4 h-4 rounded-full bg-orange-450"></div
+                  ></a>
+                  <a href="#"
+                    ><div class="w-4 h-4 rounded-full bg-secondary_color"></div
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col items-center">
+              <img
+                class="w-[348px] h-[427px] lg:max-h-[300px] lg:w-[239px]"
+                src="./src/img/product-cover-7.png"
+                alt="Cover"
+              />
+              <div
+                class="flex flex-col items-center pt-[25px] pb-[35px] gap-2.5"
+              >
+                <h3 class="font-bold text-nav_active_link">Graphic Design</h3>
+                <span class="font-bold text-sm leading-6 text-nav_link"
+                  >English Department</span
+                >
+                <div class="font-bold text-base text-gray-450">
+                  <span>$16.48</span>
+                  <span class="text-secondary_color ml-[5px]">$6.48</span>
+                </div>
+                <div class="flex gap-[6px] items-center">
+                  <a href="#">
+                    <div class="w-4 h-4 rounded-full bg-primary"></div>
+                  </a>
+                  <a href="#"
+                    ><div class="w-4 h-4 rounded-full bg-secondary_color"></div
+                  ></a>
+                  <a href="#"
+                    ><div class="w-4 h-4 rounded-full bg-orange-450"></div
+                  ></a>
+                  <a href="#"
+                    ><div class="w-4 h-4 rounded-full bg-secondary_color"></div
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col items-center">
+              <img
+                class="w-[348px] h-[427px] lg:max-h-[300px] lg:w-[239px]"
+                src="./src/img/product-cover-8.png"
+                alt="Cover"
+              />
+              <div
+                class="flex flex-col items-center pt-[25px] pb-[35px] gap-2.5"
+              >
+                <h3 class="font-bold text-nav_active_link">Graphic Design</h3>
+                <span class="font-bold text-sm leading-6 text-nav_link"
+                  >English Department</span
+                >
+                <div class="font-bold text-base text-gray-450">
+                  <span>$16.48</span>
+                  <span class="text-secondary_color ml-[5px]">$6.48</span>
+                </div>
+                <div class="flex gap-[6px] items-center">
+                  <a href="#">
+                    <div class="w-4 h-4 rounded-full bg-primary"></div>
+                  </a>
+                  <a href="#"
+                    ><div class="w-4 h-4 rounded-full bg-secondary_color"></div
+                  ></a>
+                  <a href="#"
+                    ><div class="w-4 h-4 rounded-full bg-orange-450"></div
+                  ></a>
+                  <a href="#"
+                    ><div class="w-4 h-4 rounded-full bg-secondary_color"></div
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col items-center">
+              <img
+                class="w-[348px] h-[427px] lg:max-h-[300px] lg:w-[239px]"
+                src="./src/img/product-cover-9.png"
+                alt="Cover"
+              />
+              <div
+                class="flex flex-col items-center pt-[25px] pb-[35px] gap-2.5"
+              >
+                <h3 class="font-bold text-nav_active_link">Graphic Design</h3>
+                <span class="font-bold text-sm leading-6 text-nav_link"
+                  >English Department</span
+                >
+                <div class="font-bold text-base text-gray-450">
+                  <span>$16.48</span>
+                  <span class="text-secondary_color ml-[5px]">$6.48</span>
+                </div>
+                <div class="flex gap-[6px] items-center">
+                  <a href="#">
+                    <div class="w-4 h-4 rounded-full bg-primary"></div>
+                  </a>
+                  <a href="#"
+                    ><div class="w-4 h-4 rounded-full bg-secondary_color"></div
+                  ></a>
+                  <a href="#"
+                    ><div class="w-4 h-4 rounded-full bg-orange-450"></div
+                  ></a>
+                  <a href="#"
+                    ><div class="w-4 h-4 rounded-full bg-secondary_color"></div
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col items-center">
+              <img
+                class="w-[348px] h-[427px] lg:max-h-[300px] lg:w-[239px]"
+                src="./src/img/product-cover-10.png"
+                alt="Cover"
+              />
+              <div
+                class="flex flex-col items-center pt-[25px] pb-[35px] gap-2.5"
+              >
+                <h3 class="font-bold text-nav_active_link">Graphic Design</h3>
+                <span class="font-bold text-sm leading-6 text-nav_link"
+                  >English Department</span
+                >
+                <div class="font-bold text-base text-gray-450">
+                  <span>$16.48</span>
+                  <span class="text-secondary_color ml-[5px]">$6.48</span>
+                </div>
+                <div class="flex gap-[6px] items-center">
+                  <a href="#">
+                    <div class="w-4 h-4 rounded-full bg-primary"></div>
+                  </a>
+                  <a href="#"
+                    ><div class="w-4 h-4 rounded-full bg-secondary_color"></div
+                  ></a>
+                  <a href="#"
+                    ><div class="w-4 h-4 rounded-full bg-orange-450"></div
+                  ></a>
+                  <a href="#"
+                    ><div class="w-4 h-4 rounded-full bg-secondary_color"></div
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col items-center">
+              <img
+                class="w-[348px] h-[427px] lg:max-h-[300px] lg:w-[239px]"
+                src="./src/img/product-cover-11.png"
+                alt="Cover"
+              />
+              <div
+                class="flex flex-col items-center pt-[25px] pb-[35px] gap-2.5"
+              >
+                <h3 class="font-bold text-nav_active_link">Graphic Design</h3>
+                <span class="font-bold text-sm leading-6 text-nav_link"
+                  >English Department</span
+                >
+                <div class="font-bold text-base text-gray-450">
+                  <span>$16.48</span>
+                  <span class="text-secondary_color ml-[5px]">$6.48</span>
+                </div>
+                <div class="flex gap-[6px] items-center">
+                  <a href="#">
+                    <div class="w-4 h-4 rounded-full bg-primary"></div>
+                  </a>
+                  <a href="#"
+                    ><div class="w-4 h-4 rounded-full bg-secondary_color"></div
+                  ></a>
+                  <a href="#"
+                    ><div class="w-4 h-4 rounded-full bg-orange-450"></div
+                  ></a>
+                  <a href="#"
+                    ><div class="w-4 h-4 rounded-full bg-secondary_color"></div
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col items-center">
+              <img
+                class="w-[348px] h-[427px] lg:max-h-[300px] lg:w-[239px]"
+                src="./src/img/product-cover-12.png"
+                alt="Cover"
+              />
+              <div
+                class="flex flex-col items-center pt-[25px] pb-[35px] gap-2.5"
+              >
+                <h3 class="font-bold text-nav_active_link">Graphic Design</h3>
+                <span class="font-bold text-sm leading-6 text-nav_link"
+                  >English Department</span
+                >
+                <div class="font-bold text-base text-gray-450">
+                  <span>$16.48</span>
+                  <span class="text-secondary_color ml-[5px]">$6.48</span>
+                </div>
+                <div class="flex gap-[6px] items-center">
+                  <a href="#">
+                    <div class="w-4 h-4 rounded-full bg-primary"></div>
+                  </a>
+                  <a href="#"
+                    ><div class="w-4 h-4 rounded-full bg-secondary_color"></div
+                  ></a>
+                  <a href="#"
+                    ><div class="w-4 h-4 rounded-full bg-orange-450"></div
+                  ></a>
+                  <a href="#"
+                    ><div class="w-4 h-4 rounded-full bg-secondary_color"></div
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- TODO Shop bottom -->
+        <div
+          class="shop-bottom flex justify-center pt-12 pb-20 lg:py-12 mx-auto"
+        >
+          <div>
+            <nav
+              class="isolate inline-flex -space-x-px rounded-md shadow-sm"
+              aria-label="Pagination"
+            >
+              <a
+                href="#"
+                class="bg-gray-453 text-nav_link text-sm leading-6 font-bold relative inline-flex items-center rounded-l-md px-2 py-2 text-gray-400 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-20 focus:outline-offset-0"
+              >
+                <span>First</span>
+              </a>
+              <!-- Current: "z-10 bg-indigo-600 text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600", Default: "text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:outline-offset-0" -->
+              <a
+                href="#"
+                class="text-primary relative inline-flex items-center px-4 py-2 text-sm font-semibold text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-20 focus:outline-offset-0"
+                >1</a
+              >
+              <a
+                href="#"
+                aria-current="page"
+                class="relative py-[25px] z-10 inline-flex items-center bg-primary px-4 py-2 text-sm font-semibold text-white focus:z-20 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                >2</a
+              >
+              <a
+                href="#"
+                class="text-primary relative hidden items-center px-4 py-2 text-sm font-semibold text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-20 focus:outline-offset-0 md:inline-flex"
+                >3</a
+              >
+              <a
+                href="#"
+                class="text-primary text-sm leading-6 font-bold relative inline-flex items-center rounded-r-md px-2 py-2 text-gray-400 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-20 focus:outline-offset-0"
+              >
+                <span class="">Next</span>
+              </a>
+            </nav>
+          </div>
+        </div>
+      </section>
+      <!-- TODO Partners section -->
+      <section class="partners bg-gray-454 py-[160px] lg:py-[51px]">
+        <div
+          class="container flex flex-col gap-y-[60px] lg:flex-row justify-between mx-auto items-center"
+        >
+          <a href="#">
+            <svg
+              class="w-[148px] h-[49px] lg:w-[153px] lg:h-[33px]"
+              viewBox="0 0 148 49"
+            >
+              <use href="./src/img/icon.svg#icon-fa-brands-1"></use></svg
+          ></a>
+          <a href="#">
+            <svg
+              class="w-[139px] h-98px lg:w-[146px] lg:h-[58px]"
+              viewBox="0 0 139 98"
+            >
+              <use href="./src/img/icon.svg#icon-fa-brands-2"></use></svg
+          ></a>
+          <a href="#">
+            <svg
+              class="w-[149px] h-[108px] lg:w-[152px] lg:h-[74px]"
+              viewBox="0 0 149 108"
+            >
+              <use href="./src/img/icon.svg#icon-Vector"></use></svg
+          ></a>
+          <a href="#">
+            <svg
+              class="w-[148px] h-[59px] lg:w-[151px] lg:h-[41px]"
+              viewBox="0 0 148 59"
+            >
+              <use href="./src/img/icon.svg#icon-fa-brands-4"></use></svg
+          ></a>
+          <a href="#">
+            <svg
+              class="w-[152px] h-[91px] lg:w-[151px] lg:h-[61px]"
+              viewBox="0 0 152 91"
+            >
+              <use href="./src/img/icon.svg#icon-Vector-1"></use></svg
+          ></a>
+          <a href="#">
+            <svg
+              class="w-[148px] h-[141px] lg:w-[151px] lg:h-[71px]"
+              viewBox="0 0 148 141"
+            >
+              <use href="./src/img/icon.svg#icon-Vector-2"></use>
+            </svg>
+          </a>
+        </div>
+      </section>
+    </main>
+    <!-- TODO Footer -->
+    <footer class="pl-5 lg:pl-0">
+      <!-- TODO Footer Top -->
+      <div class="footer-top pt-[40px] flex flex-col items-center">
+        <div class="container flex mx-auto flex-col">
+          <div
+            class="flex flex-col gap-6 lg:justify-between lg:flex-row lg:mb-[40px]"
+          >
+            <a href="#" class="font-bold text-2xl text-nav_active_link"
+              >Bandage</a
+            >
+            <div class="social-link flex gap-x-4 items-center">
+              <a href="#" class="text-primary"
+                ><i class="fa-brands fa-instagram text-2xl"></i
+              ></a>
+              <a href="#" class="text-primary"
+                ><i class="fa-brands fa-facebook text-2xl"></i
+              ></a>
+              <a href="#" class="text-primary"
+                ><i class="fa-brands fa-twitter text-2xl"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="hidden lg:block h-[2px] w-[1057px] bg-gray-455"></div>
+      </div>
+      <!-- TODO Footer center -->
+      <div
+        class="footer-center container py-[70px] lg:py-[50px] flex flex-col lg:flex-row mx-auto lg:justify-between gap-[30px]"
+      >
+        <ul class="flex gap-2.5 flex-col">
+          <li>
+            <h3 class="mb-2.5 font-bold text-nav_active_link text-base">
+              Company Info
+            </h3>
+          </li>
+          <li>
+            <a href="#" class="text-sm leading-6 text-nav_link font-bold"
+              >About Us</a
+            >
+          </li>
+          <li>
+            <a href="#" class="text-sm leading-6 text-nav_link font-bold"
+              >Carrier</a
+            >
+          </li>
+          <li>
+            <a href="#" class="text-sm leading-6 text-nav_link font-bold"
+              >We are hiring</a
+            >
+          </li>
+          <li>
+            <a href="#" class="text-sm leading-6 text-nav_link font-bold"
+              >Blog</a
+            >
+          </li>
+        </ul>
+        <ul class="flex gap-2.5 flex-col">
+          <li>
+            <h3 class="mb-2.5 font-bold text-nav_active_link text-base">
+              Legal
+            </h3>
+          </li>
+          <li>
+            <a href="#" class="text-sm leading-6 text-nav_link font-bold"
+              >About Us</a
+            >
+          </li>
+          <li>
+            <a href="#" class="text-sm leading-6 text-nav_link font-bold"
+              >Carrier</a
+            >
+          </li>
+          <li>
+            <a href="#" class="text-sm leading-6 text-nav_link font-bold"
+              >We are hiring</a
+            >
+          </li>
+          <li>
+            <a href="#" class="text-sm leading-6 text-nav_link font-bold"
+              >Blog</a
+            >
+          </li>
+        </ul>
+        <ul class="flex gap-2.5 flex-col">
+          <li>
+            <h3 class="mb-2.5 font-bold text-nav_active_link text-base">
+              Features
+            </h3>
+          </li>
+          <li>
+            <a href="#" class="text-sm leading-6 text-nav_link font-bold"
+              >Business Marketing</a
+            >
+          </li>
+          <li>
+            <a href="#" class="text-sm leading-6 text-nav_link font-bold"
+              >User Analytic</a
+            >
+          </li>
+          <li>
+            <a href="#" class="text-sm leading-6 text-nav_link font-bold"
+              >Live Chat</a
+            >
+          </li>
+          <li>
+            <a href="#" class="text-sm leading-6 text-nav_link font-bold"
+              >Unlimited Support</a
+            >
+          </li>
+        </ul>
+        <ul class="flex gap-2.5 flex-col">
+          <li>
+            <h3 class="mb-2.5 font-bold text-nav_active_link text-base">
+              Resources
+            </h3>
+          </li>
+          <li>
+            <a href="#" class="text-sm leading-6 text-nav_link font-bold"
+              >IOS & Android</a
+            >
+          </li>
+          <li>
+            <a href="#" class="text-sm leading-6 text-nav_link font-bold"
+              >Watch a Demo</a
+            >
+          </li>
+          <li>
+            <a href="#" class="text-sm leading-6 text-nav_link font-bold"
+              >Customers</a
+            >
+          </li>
+          <li>
+            <a href="#" class="text-sm leading-6 text-nav_link font-bold"
+              >API</a
+            >
+          </li>
+        </ul>
+        <div class="contact-us flex flex-col">
+          <h3 class="mb-5 font-bold text-nav_active_link text-base">
+            Get In Touch
+          </h3>
+          <div class="flex">
+            <input
+              type="email"
+              placeholder="Your Email"
+              class="pl-[20px] rounded-l-[5px] bg-gray-456 text-nav_link border-[1px] border-gray-455"
+            />
+            <button
+              type="button"
+              class="bg-primary w-[117px] font-sm leading-[28px] rounded-r-[5px] text-white py-[15px] px-[22px]"
+            >
+              Subscribe
+            </button>
+          </div>
+          <span class="font-xs leading-[28px] text-nav_link"
+            >Lore imp sum dolor Amit</span
+          >
+        </div>
+      </div>
+      <!-- TODO Footer bottom -->
+      <div class="bg-gray-457 py-[25px]">
+        <div class="container mx-auto flex justify-center lg:justify-start">
+          <p class="text-center lg:text-start w-[200px] lg:w-full font-bold text-sm leading-6 text-nav_link">Made With Love By Finland All Right Reserved</p>
+        </div>
+      </div>
+    </footer>
+    <script src="./src/script/sctipt.js"></script>
+  </body>
+</html>
